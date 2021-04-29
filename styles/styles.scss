@@ -1,0 +1,273 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background: white;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+  
+/* Nav Styles */
+  
+.main-nav {
+  width: 100%;
+  background: white;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  z-index: 5;
+  text-align: center;
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+
+    .navname {
+      display: block;
+      margin-right: auto;
+      color: black;
+    }
+
+    li {
+      padding: 5px 10px 10px 10px;
+    }
+  }
+}
+
+/* Mobile View */
+
+.headervideowrapper {
+  iframe {
+    min-width: 320px;
+    min-height: 179.2px;
+    border-radius: 20px;
+    margin-top: 100px;
+  }
+}
+
+.projectssection {
+  margin-bottom: 150px;
+}
+
+.projectstitlewrapper {
+  h2 {
+    font-size: 50px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+  }
+
+  padding-top: auto;
+}
+
+.project {
+  background: rgba(0, 0, 0, 0);;
+  margin-bottom: 50px;
+
+  img {
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+}
+
+.projectname {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: -50px;
+  padding-top: 25px;
+}
+
+.devskillsssection {
+  margin-bottom: 100px;
+}
+
+.devskillstitlewrapper {
+  h2 {
+    font-size: 50px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  padding-top: auto;
+  margin-bottom: 50px;
+}
+
+.devskillsouterwrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.devskill {
+  background: rgba(0, 0, 0, 0);;
+  margin-bottom: 50px;
+  width: 33%;
+
+  img {
+    max-width: 50%;
+  }
+
+  h2 {
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+}
+
+.skillname {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: -50px;
+  padding-top: 25px;
+}
+
+.auxskillsssection {
+  margin-bottom: 100px;
+}
+
+.auxskillstitlewrapper {
+
+  h2 {
+    font-size: 50px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    margin-bottom: 60px;
+  }
+
+  padding-top: auto;
+}
+
+.auxskillsouterwrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auxskill {
+  width: 33%;
+  background: rgba(0, 0, 0, 0);;
+  margin-bottom: 50px;
+
+  img {
+    max-width: 50%;
+  }
+
+  h2 {
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  background: white;
+  color: black; 
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  .copyright {
+    font-size: .75em;
+  } 
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) {
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  .headervideowrapper {
+    iframe {
+      min-width: 700px;
+      min-height: 392px;
+    }
+  }
+
+  main {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  .projectsouterwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      width: 49%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .skillname {
+    padding-top: 35px;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+  /* Desktop View */
+@media screen and (min-width: 1024px) {
+
+  .headervideowrapper {
+    iframe {
+      width: 1000px;
+      height: 561.8px;
+      border-radius: 20px;
+    }
+  }
+
+  .projectsouterwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      width: 33%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .skillname {
+    padding-top: 45px;
+  }
+
+}
